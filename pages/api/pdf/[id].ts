@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import PDFService from '../../../services/pdfService';
-import { supabase } from '../../../shared/utils/supabaseClient';
+import PDFService, { AnalysisReport } from '../../../lib/pdfService';
+import { supabase } from '../../../lib/supabaseClient';
 
 // Import the same cache from analyze route
 const analysisCache = new Map();
@@ -67,18 +67,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return v; // already object
     };
     
+    const metrics = asJson(analysis.metrics);
+
     // Format the analysis data for PDF generation
-    const formattedAnalysis = {
+    const formattedAnalysis: AnalysisReport = {
       id: analysis.id,
       location: analysis.location,
       category: analysis.category,
-      coordinates: asJson(analysis.coordinates),
       summary: analysis.summary,
-      metrics: asJson(analysis.metrics),
       recommendation: analysis.recommendation,
       alternatives: asJson(analysis.alternatives),
-      createdAt: analysis.created_at || analysis.createdAt,
-      userId: analysis.user_id || analysis.userId
+      competitors: asJson(analysis.competitors),
+      timestamp: analysis.created_at || new Date().toISOString(),
+      // Spread nested metric fields to the top level
+      ...metrics,
     };
     
     // Generate PDF

@@ -1,6 +1,6 @@
 import PDFDocument from 'pdfkit';
 
-interface AnalysisReport {
+export interface AnalysisReport {
   id: string;
   location: string;
   category: string;
