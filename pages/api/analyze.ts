@@ -104,8 +104,7 @@ async function handleAnalyze(req: NextApiRequest, res: NextApiResponse) {
             phone: details?.formatted_phone_number || null,
             google_url: details?.url || null,
             footfall: details?.user_ratings_total ?? p.user_ratings_total ?? 0,
-            average_price_for_2: calculateAveragePrice(details?.price_level ?? p.price_level ?? null),
-            revenue: getDefaultExpectedRevenue(category, footfallEstimate)
+            average_price_for_2: calculateAveragePrice(details?.price_level ?? p.price_level ?? null)
           };
         } catch (e) {
           return {
@@ -120,8 +119,7 @@ async function handleAnalyze(req: NextApiRequest, res: NextApiResponse) {
             phone: null,
             google_url: null,
             footfall: p.user_ratings_total ?? 0,
-            average_price_for_2: calculateAveragePrice(p.price_level ?? null),
-            revenue: getDefaultExpectedRevenue(category, footfallEstimate)
+            average_price_for_2: calculateAveragePrice(p.price_level ?? null)
           };
         }
       })
@@ -168,9 +166,9 @@ async function handleAnalyze(req: NextApiRequest, res: NextApiResponse) {
         viabilityScore: analysis.metrics?.viabilityScore,
         competitionLevel: analysis.metrics?.competitionLevel,
         marketSaturation: analysis.metrics?.marketSaturation,
-        avgRevenue: analysis.metrics?.avgRevenue || getDefaultAvgRevenue(category),
-        expectedRevenue: analysis.metrics?.expectedRevenue || getDefaultExpectedRevenue(category, footfallEstimate),
-        tam: analysis.metrics?.tam || getDefaultTAM(category),
+        avgRevenue: analysis.metrics?.avgRevenue,
+        expectedRevenue: analysis.metrics?.expectedRevenue,
+        tam: analysis.metrics?.tam,
         competitorCount: nearbyPlaces.length,
         footfall: footfallEstimate,
       },
@@ -300,47 +298,3 @@ function calculateAveragePrice(priceLevel: number | null): number | null {
   return priceMappings[priceLevel] || null;
 }
 
-// Helper function to get default average revenue
-function getDefaultAvgRevenue(category: string): number {
-  const avgRevenues: Record<string, number> = {
-    'restaurant': 750000, // ₹7.5L annually
-    'cafe': 350000,       // ₹3.5L annually  
-    'hotel': 1200000,     // ₹12L annually
-    'hostel': 500000,     // ₹5L annually
-    'bar': 800000,        // ₹8L annually
-    'retail': 600000      // ₹6L annually
-  };
-  
-  return avgRevenues[category.toLowerCase()] || 500000;
-}
-
-// Helper function to get default expected revenue
-function getDefaultExpectedRevenue(category: string, footfall: number): number {
-  const baseRevenues: Record<string, number> = {
-    'restaurant': 800000, // ₹8L base
-    'cafe': 400000,       // ₹4L base
-    'hotel': 1500000,     // ₹15L base
-    'hostel': 600000,     // ₹6L base
-    'bar': 900000,        // ₹9L base
-    'retail': 700000      // ₹7L base
-  };
-  
-  const base = baseRevenues[category.toLowerCase()] || 600000;
-  const footfallMultiplier = Math.max(0.5, Math.min(2.0, (footfall || 1000) / 1000));
-  
-  return Math.round(base * footfallMultiplier);
-}
-
-// Helper function to get default TAM
-function getDefaultTAM(category: string): number {
-  const tamValues: Record<string, number> = {
-    'restaurant': 50000000, // ₹5Cr TAM
-    'cafe': 25000000,       // ₹2.5Cr TAM
-    'hotel': 100000000,     // ₹10Cr TAM
-    'hostel': 30000000,     // ₹3Cr TAM
-    'bar': 60000000,        // ₹6Cr TAM
-    'retail': 40000000      // ₹4Cr TAM
-  };
-  
-  return tamValues[category.toLowerCase()] || 30000000;
-}
