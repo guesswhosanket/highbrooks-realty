@@ -46,9 +46,12 @@ class OpenAIService {
       return JSON.parse(response);
 
     } catch (error) {
+      if (error instanceof OpenAI.APIConnectionError) {
+        console.error('OpenAI API connection error:', error);
+        throw new Error('Failed to connect to OpenAI. Please check your API key and network connection.');
+      }
       console.error('Error in generateLocationAnalysis:', error);
-      // Re-throw the error to be handled by the calling API route
-      throw error;
+      throw error; // Re-throw other errors
     }
   }
 
