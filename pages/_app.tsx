@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { JsonLdSchema } from '../components/json-ld-schema';
+import { Footer } from '../components/Footer';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div className={inter.className}>
         <Component {...pageProps} />
+        <Footer />
       </div>
     </>
   );
