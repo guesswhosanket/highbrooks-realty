@@ -29,22 +29,31 @@ export default function About() {
           <h1 className="text-4xl font-bold text-white mb-8">About Highbrook Realty AI</h1>
           
                     <div className="prose prose-invert max-w-none">
+            <p className="text-lg text-gray-300 mb-6">
+              Highbrook Realty AI is an AI-powered platform designed to help real estate professionals and investors make smarter, data-driven decisions.
+            </p>
+
             <h2 className="text-2xl font-semibold text-[#7c7ff3] mt-10 mb-4">Our Story</h2>
             <p className="text-gray-300">
               Founded by data scientist and real estate analyst, Jane Doe, Highbrook Realty AI was born from a simple observation: the hospitality industry was making multi-million dollar location decisions with outdated tools. After publishing her research on predictive real estate analytics in Forbes, Jane assembled a team to build a platform that could provide any entrepreneur with the same level of data intelligence that large corporations use, leveling the playing field for all.
             </p>
 
-            <div className="mt-8 p-6 bg-gray-800/50 rounded-lg border border-gray-700">
-              <h3 className="text-xl font-semibold text-white">About the Founder</h3>
-              <p className="text-gray-400 mt-2">
-                Jane Doe is a leading voice in real estate technology. With over a decade of experience in data science, her work on market trend prediction has been featured in <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer" className="text-[#7c7ff3] hover:underline">Forbes</a> and she holds a Masters in Urban Planning from MIT. She is passionate about democratizing data for small and medium-sized businesses.
-              </p>
+            <h2 className="text-2xl font-semibold text-[#7c7ff3] mt-10 mb-4">Our Team</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">Jane Doe</h3>
+                <p className="text-gray-400 mt-2">
+                  Founder & Chief Data Scientist. With over a decade of experience, her work on market trend prediction has been featured in <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer" className="text-[#7c7ff3] hover:underline">Forbes</a>. She holds a Masters in Urban Planning from MIT.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">John Smith</h3>
+                <p className="text-gray-400 mt-2">
+                  Lead AI Engineer. John architected our core analytics engine. He is a former software engineer at Google and specializes in geospatial data processing and machine learning models.
+                </p>
+              </div>
             </div>
 
-            <p className="text-lg text-gray-300 mb-6">
-              Highbrook Realty AI is an AI-powered platform designed to help real estate professionals and investors make smarter, data-driven decisions.
-            </p>
-            
             <h2 className="text-2xl font-semibold text-[#7c7ff3] mt-10 mb-4">Our Mission</h2>
             <p className="text-gray-300">
               Our mission is to empower real estate professionals with actionable, AI-driven insights to maximize investment returns and minimize risks. We combine geographic data, market analysis, and AI to give you a comprehensive understanding of a location's potential.

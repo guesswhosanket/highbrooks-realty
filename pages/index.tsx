@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Navbar } from '../components/Navbar';
 import { FAQSection } from '../components/faq-section';
+import { Testimonials } from '../components/Testimonials';
+import { CaseStudies } from '../components/CaseStudies';
 import { useForm } from 'react-hook-form';
 import Head from 'next/head';
 
@@ -200,6 +202,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+                <CaseStudies />
+        <Testimonials />
         <FAQSection />
       </main>
     </div>
