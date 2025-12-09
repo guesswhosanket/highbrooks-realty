@@ -1,24 +1,24 @@
 export function FAQSection() {
   const faqs = [
     {
-      q: "What data sources does Highbrook Realty AI use for its analysis?",
-      a: "Our platform aggregates and analyzes data from a wide range of trusted sources, including public records, demographic databases, foot traffic data, real-time business listings, and proprietary market trend information. This multi-source approach allows our AI to build a comprehensive and accurate picture of any location's potential."
+      q: "What is Highbrook Realty AI?",
+      a: "Highbrook Realty AI is a location intelligence platform specifically designed for the hospitality industry. We use advanced AI and data analysis to provide entrepreneurs and investors with comprehensive reports on potential business locations, covering competitor intelligence, viability scores, and revenue projections to help you make informed decisions."
     },
     {
-      q: "Is this a one-time report or an ongoing subscription?",
-      a: "We offer flexible options to suit your needs. You can purchase a detailed analysis for a single location as a one-time report, which is perfect for validating a specific choice. We also offer subscription packages for investors and franchises who are continuously scouting and comparing multiple locations."
+      q: "How does your AI help me choose a location?",
+      a: "Our AI platform analyzes multiple factors to de-risk your investment. It provides a full SWOT analysis, identifies current and incoming competitors to gauge market saturation, and generates dynamic revenue projections based on hyper-local data. It also proactively suggests and evaluates nearby alternative locations that may offer lower competition or better demographics, ensuring you find the optimal site."
     },
     {
-      q: "How quickly will I receive my location intelligence report?",
-      a: "After you select a location and business type, our AI begins processing the data immediately. A complete, in-depth report is typically generated and delivered to you within 24 hours, providing you with actionable insights without a long wait."
+      q: "What types of businesses do you specialize in?",
+      a: "Currently, our AI models are optimized to provide detailed analysis for hospitality businesses, including cafés, restaurants, hotels, and hostels. We are actively working to expand our services to other sectors."
     },
     {
-      q: "Can you analyze locations for businesses outside of cafés, restaurants, hotels, and hostels?",
-      a: "Currently, our AI models are specifically optimized for the hospitality sector, including cafés, restaurants, hotels, and hostels. We are actively working on expanding our capabilities to include other business types. Please contact our team to discuss your specific needs."
+      q: "How long does it take to get a location analysis report?",
+      a: "Our process is fast and efficient. After you submit your desired location and business type, our AI begins its analysis immediately. You will typically receive a complete, in-depth intelligence report within 24 hours, allowing you to move forward with your plans without delay."
     },
     {
-      q: "How do your AI-powered revenue projections differ from traditional estimates?",
-      a: "Traditional estimates often rely on broad averages. Our AI creates dynamic revenue projections by analyzing hyper-local factors, including competitor performance, demographic spending habits, foot traffic patterns, and economic indicators specific to your chosen business type. This results in a more nuanced and reliable forecast to support your business plan."
+      q: "What makes your revenue projections more accurate than traditional methods?",
+      a: "Traditional estimates often rely on broad market averages. Our AI-powered projections are far more nuanced, analyzing hyper-local data points such as foot traffic patterns, competitor performance, demographic spending habits, and specific economic indicators for your business type. This results in a more reliable and actionable financial forecast for your business plan."
     }
   ];
 
