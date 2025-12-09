@@ -64,8 +64,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0f172a]">
       <Head>
-        <title>Highbrook Realty AI - Location Intelligence</title>
-        <meta name="description" content="Get detailed insights on whether a location is suitable for your hospitality business" />
+        <title>Highbrook Realty AI | AI-Powered Location Intelligence for Hospitality</title>
+        <meta name="description" content="Make data-driven decisions for your hospitality venture. Highbrook Realty AI provides comprehensive location analysis, competitor intelligence, and revenue projections for cafés, restaurants, and hotels." />
       </Head>
       
       <Navbar />
@@ -76,9 +76,13 @@ export default function Home() {
             <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl tracking-tight">
               <span className="text-white">Highbrook </span>
               <span className="text-[#7c7ff3] bg-clip-text">Realty AI</span>
+              <span className="text-white"> - Location Intelligence</span>
             </h1>
             <p className="mt-8 max-w-2xl mx-auto text-xl text-gray-300">
               AI-Powered Insights for Real Estate Success
+            </p>
+            <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-300">
+              Highbrook Realty AI leverages cutting-edge data analysis to provide you with a comprehensive understanding of any location, helping you make smarter, data-driven decisions for your hospitality business.
             </p>
           </div>
 

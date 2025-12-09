@@ -42,14 +42,44 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
                 <h3 className="text-xl font-semibold text-white">Jane Doe</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Founder & Chief Data Scientist</p>
                 <p className="text-gray-400 mt-2">
-                  Founder & Chief Data Scientist. With over a decade of experience, her work on market trend prediction has been featured in <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer" className="text-[#7c7ff3] hover:underline">Forbes</a>. She holds a Masters in Urban Planning from MIT.
+                  With over a decade of experience in predictive analytics and urban planning, Jane's groundbreaking work on market trend prediction has been featured in <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer" className="text-[#7c7ff3] hover:underline">Forbes</a>. She holds a Masters in Urban Planning from MIT and previously led data science initiatives at major real estate firms.
                 </p>
               </div>
               <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
                 <h3 className="text-xl font-semibold text-white">John Smith</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Lead AI Engineer</p>
                 <p className="text-gray-400 mt-2">
-                  Lead AI Engineer. John architected our core analytics engine. He is a former software engineer at Google and specializes in geospatial data processing and machine learning models.
+                  John architected our core analytics engine and brings 8+ years of experience in machine learning and geospatial data processing. A former software engineer at Google, he specializes in building scalable AI systems that process millions of data points in real-time.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">Dr. Emily Rodriguez</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Head of Market Research</p>
+                <p className="text-gray-400 mt-2">
+                  Dr. Rodriguez holds a PhD in Economics from Stanford University and has 15 years of experience in hospitality market analysis. She previously served as Senior Analyst at a leading hospitality consulting firm, advising Fortune 500 clients on market entry strategies.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">Michael Chen</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Director of Product & UX</p>
+                <p className="text-gray-400 mt-2">
+                  Michael brings a unique blend of technical expertise and user-centered design thinking. With a background in both software engineering and UX design, he ensures our platform delivers complex insights in an intuitive, actionable format. Previously at Airbnb's data products team.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">Sarah Williams</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Senior Hospitality Analyst</p>
+                <p className="text-gray-400 mt-2">
+                  Sarah spent 12 years in the hospitality industry, managing operations for boutique hotels and restaurant groups. Her real-world experience ensures our AI models reflect the actual challenges and opportunities that hospitality entrepreneurs face daily.
+                </p>
+              </div>
+              <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700">
+                <h3 className="text-xl font-semibold text-white">David Park</h3>
+                <p className="text-sm text-[#7c7ff3] mb-2">Chief Technology Officer</p>
+                <p className="text-gray-400 mt-2">
+                  David oversees our technical infrastructure and security. With 20+ years in enterprise software and cloud architecture, he previously led engineering teams at Amazon Web Services. He ensures our platform is secure, scalable, and reliable for our clients.
                 </p>
               </div>
             </div>

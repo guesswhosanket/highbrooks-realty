@@ -17,8 +17,33 @@ export default function RestaurantAnalysis() {
           <h1 className="text-4xl font-bold text-white mb-8">Restaurant Location Intelligence</h1>
           <div className="prose prose-invert max-w-none">
             <p className="text-lg text-gray-300 mb-6">
-              Content for this section is coming soon. This page will detail the specific metrics and data points Highbrook Realty AI analyzes for restaurant ventures.
+              Opening a restaurant is one of the most capital-intensive ventures in hospitality. Location can make or break your investment. Highbrook Realty AI provides comprehensive, data-driven analysis specifically tailored for restaurant ventures, helping you avoid costly mistakes and identify high-potential opportunities.
             </p>
+
+            <h2 className="text-2xl font-semibold text-[#7c7ff3] mt-10 mb-4">Critical Metrics for Restaurant Success</h2>
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li><strong>Demographic & Income Analysis:</strong> We analyze the local population's income levels, dining preferences, and spending patterns to ensure your concept matches the market's ability and willingness to pay.</li>
+              <li><strong>Foot Traffic Patterns:</strong> Our AI identifies peak dining hours, weekday vs. weekend patterns, and seasonal variations to help you optimize staffing and menu offerings.</li>
+              <li><strong>Competitive Landscape Mapping:</strong> We identify all competing restaurants within a 2-mile radius, analyze their review sentiment, pricing strategies, and peak hours to find market gaps and differentiation opportunities.</li>
+              <li><strong>Parking & Accessibility:</strong> We evaluate parking availability, public transportation access, and walkability scores—critical factors that directly impact customer convenience and frequency of visits.</li>
+              <li><strong>Revenue Projections:</strong> Based on comparable restaurants in similar locations, we provide realistic revenue forecasts for your first 3 years of operation.</li>
+            </ul>
+
+            <h2 className="text-2xl font-semibold text-[#7c7ff3] mt-10 mb-4">Why Location Intelligence Matters</h2>
+            <p className="text-gray-300 mb-4">
+              According to industry research, 60% of restaurants fail within their first year, and poor location choice is one of the top three reasons. Our AI-powered analysis helps you:
+            </p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-300">
+              <li>Avoid oversaturated markets where competition is too fierce</li>
+              <li>Identify underserved neighborhoods with high demand</li>
+              <li>Understand the true cost of operating in a specific location (rent, labor, utilities)</li>
+              <li>Make data-backed decisions that impress investors and lenders</li>
+            </ul>
+
+            <div className="mt-10 bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+              <h3 className="text-xl font-semibold text-white">Ready to Analyze Your Restaurant Location?</h3>
+              <p className="text-gray-400 mt-2">Get started with a comprehensive location analysis report. Simply enter your desired location on our <a href="/" className="text-[#7c7ff3] hover:underline">homepage</a> and select "Restaurant" as your business type.</p>
+            </div>
           </div>
         </div>
       </main>
