@@ -9,15 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@react-google-maps/api": "^2.19.2",
     "@supabase/auth-helpers-nextjs": "^0.7.4",
     "@supabase/supabase-js": "^2.31.0",
     "cors": "^2.8.5",
     "cross-fetch": "^4.1.0",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.6.1",
     "express": "^4.18.2",
     "next": "14.0.0",
-    "node-fetch": "^3.3.2",
+    "node-fetch": "^2.7.0",
     "openai": "^4.17.0",
     "pdf-lib": "^1.17.1",
     "pdfkit": "^0.14.0",
